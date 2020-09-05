@@ -10,6 +10,7 @@ parameters:
   - name: github_organization
     type: string
     displayName: Specify the GitHub Organisation e.g. lot2learn (mandatory)
+
   - name: github_repo
     type: string
     displayName: Specify the GitHub Repository e.g. nodejs-project (mandatory)
@@ -37,8 +38,7 @@ parameters:
 multibranch:
   branchSource:
     github:
-      apiUri: https://github.com/
-      repoOwner: arnabnandy1706
+      repoOwner: ${github_organization}
       repository: ${github_repo}
       credentialsId: ${github_creds}
       traits:
