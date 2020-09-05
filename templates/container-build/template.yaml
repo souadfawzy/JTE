@@ -38,7 +38,7 @@ multibranch:
   branchSource:
     github:
       apiUri: https://github.com/
-      repoOwner: ${github_organization}
+      repoOwner: arnabnandy1706
       repository: ${github_repo}
       credentialsId: ${github_creds}
       traits:
