@@ -37,7 +37,7 @@ parameters:
 multibranch:
   branchSource:
     github:
-      apiUri: https://api.github.com
+      apiUri: https://github.com/
       repoOwner: ${github_organization}
       repository: ${github_repo}
       credentialsId: ${github_creds}
