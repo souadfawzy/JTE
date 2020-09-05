@@ -41,8 +41,8 @@ pipeline {
         steps {
             script {
                 dockerBuild.login()
-                dockerBuild.build()
-                dockerBuild.push()
+                dockerBuild.build("arnabdnandy1706/smartdb:latest")
+                dockerBuild.push("arnabdnandy1706/smartdb:latest")
             }
         }
     }
