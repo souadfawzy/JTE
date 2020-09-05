@@ -35,6 +35,10 @@ parameters:
     type: string
     displayName: Specify the container build arguments as semicolon delimited string e.g. VAR1=FOO;VAR2=BAR (optional)
 
+  - name: docker_tag
+    type: string
+    displayName: Specify the container tagname e.g. arnabdnany1706/smartdb:latest (mandatory)
+
 multibranch:
   branchSource:
     github:

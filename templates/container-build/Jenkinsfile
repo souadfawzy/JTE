@@ -26,8 +26,9 @@ pipeline {
     stage ('preparation') {
       steps {
         script {
-          env.DOCKERFILES = dockerfiles
+          env.DOCKERFILES        = dockerfiles
           env.GITHUB_REPO        = github_repo.toLowerCase()
+          env.DOCKER_TAG         = docker_tag.toLowerCase()
         }
       }
     }
@@ -41,8 +42,8 @@ pipeline {
         steps {
             script {
                 dockerBuild.login()
-                dockerBuild.build("arnabdnandy1706/smartdb:latest")
-                dockerBuild.push("arnabdnandy1706/smartdb:latest")
+                dockerBuild.build(env.DOCKER_TAG)
+                dockerBuild.push(env.DOCKER_TAG)
             }
         }
     }
