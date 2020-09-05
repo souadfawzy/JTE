@@ -7,7 +7,7 @@ type: pipeline-template
 templateType: MULTIBRANCH
 
 parameters:
-  - name: github_organisation
+  - name: github_organization
     type: string
     displayName: Specify the GitHub Organisation e.g. lot2learn (mandatory)
   - name: github_repo
