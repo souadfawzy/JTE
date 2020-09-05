@@ -59,4 +59,4 @@ multibranch:
 
   orphanedItemStrategy:
     daysToKeep: 60
-  scanRepositoryInterval: 1 minutes
+  scanRepositoryInterval: 15 minutes
